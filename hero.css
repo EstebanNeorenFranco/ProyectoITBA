@@ -1,0 +1,53 @@
+/*  HERO    */
+
+.blured-image {
+    width: 100%;
+    height: 100%;
+  
+    /* Add the blur effect */
+    filter: blur(10px);
+    -webkit-filter: blur(4px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.hero-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bolder;
+    /*font-family: DeliciousHandrawn;*/
+    text-align: center;   
+    text-shadow: 2px 2px #fff;
+     
+}
+
+.hero-subtitle-1{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    text-align: center;
+    color: white;
+    
+}
+
+.hero-subtitle-2{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    text-align: center;
+    color: white;
+    
+}
