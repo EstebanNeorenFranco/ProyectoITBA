@@ -15,6 +15,11 @@ body {
     src: url(./fonts/Bitter.ttf);
 }
 /*   HEAD   */
+.top_stick{
+    position: sticky;
+    top: 0px;
+ 
+}
 
 #head{
     margin: 20px;
@@ -26,6 +31,10 @@ body {
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: white;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.07);
+
 }
 
 .headSelector {
@@ -33,6 +42,10 @@ body {
     text-align: center;
     gap: 20px;
     
+}
+
+.bolded{
+    font: bold
 }
 
 .homeButton{
@@ -57,6 +70,29 @@ button {
 button:hover {
     transform: scale(0.99);
     color: #413543;
-    
+}
+
+/*   FOOTER   */
+
+#footer{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    text-align: center;
+
+}
+
+.footer_box{
+    text-align: center;
+
+}
+
+
+.social_network{
+    display: flex;
+    gap: 10px;
+    text-align: center;
 }
 

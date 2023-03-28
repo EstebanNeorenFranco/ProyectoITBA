@@ -19,7 +19,7 @@ body {
     height: 200px;
     width: 200px;
     border-radius: 10px;
-    
+    content-visibility: auto;
 }
 
 .box_description{
