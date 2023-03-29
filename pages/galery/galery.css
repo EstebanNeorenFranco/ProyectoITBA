@@ -13,32 +13,34 @@ body {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .galery_image{
     height: 200px;
     width: 200px;
     border-radius: 10px;
-    content-visibility: auto;
+
+    
 }
 
 .box_description{
     display: flex;
     align-items: center;
     margin: auto;
-    gap: 10px;
 }
-
 
 
 .description{
     padding-left: 15px;
-
+    justify-content: left;
 }
 
 .download_button {
     padding-right: 20px;
+    padding-left: 20px;
     width: 30px;
     height: 30px;
     cursor: pointer;
+    justify-content: right;
 }
