@@ -23,11 +23,14 @@ body {
 
 .galery_image{
     height: 200px;
-    width: 200px;
-    border-radius: 10px;
-
-    
+    width: auto;
+    border-radius: 10px;   
 }
+
+.galery_image:hover{
+    filter: blur(1px);
+}
+
 
 .box_description{
     display: flex;
@@ -48,9 +51,16 @@ body {
     height: 30px;
     cursor: pointer;
     justify-content: right;
+    transition: .9s ;
 }
 
 .download_button:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
     color: #413543;
+}
+
+.page_selector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

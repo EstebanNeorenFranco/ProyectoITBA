@@ -19,7 +19,7 @@
     object-fit: fill;
   }
 .hero_box{
-    background-image: url("/homepage_images/museum-photo.png"), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));
+    background-image: url("assets/homepage_images/museum-photo.png"), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
