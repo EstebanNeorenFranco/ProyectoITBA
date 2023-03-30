@@ -27,6 +27,12 @@
     text-align: center;
 }
 
+.shop_price{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
 .shop_image{
     width: 200px;
     height: auto;
@@ -39,7 +45,7 @@
 
 .add_cart_icon{
     width: 30px;
-    margin:auto;
+    margin: auto;
     display:block;
     padding-bottom: 10px;
     cursor: pointer;
@@ -49,3 +55,32 @@
     transform: scale(1.10);
     color: #413543;
 }
+
+.cart_box{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom:5%;
+    right:5%;
+}
+
+.cart_box:hover{
+    background-color: rgb(64, 64, 64);
+    transform: scale(1.05); 
+}
+
+
+
+.cart{
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);    
+    
+}
+
