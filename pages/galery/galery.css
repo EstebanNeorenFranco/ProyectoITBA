@@ -1,5 +1,4 @@
 body {
-    
     font-family: Arial Helvetica, sans-serif;
 }
 
@@ -14,6 +13,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     height: auto;
+    cursor: pointer;
+    
 }
 
 .box_shadow:hover{

@@ -15,6 +15,9 @@ body {
     font-family: bitter;
     src: url(/fonts/Bitter.ttf);
 }
+
+
+
 /*   HEAD   */
 .top_stick{
     position: sticky;
@@ -71,6 +74,7 @@ button {
     outline: none;
     background-color: transparent;
     font-size: medium;
+    color: black;
 }
 
 button:hover {
@@ -103,3 +107,8 @@ button:hover {
     font: xx-small;
 }
 
+.moon:hover{
+    transform: scale(1.1);
+    transition: .2s ;
+    cursor: pointer;
+}
