@@ -1,6 +1,7 @@
 body {
     font-family: Arial Helvetica, sans-serif;
     
+    
 }
 
 
@@ -18,11 +19,15 @@ body {
 
 
 
+
+
 /*   HEAD   */
 .top_stick{
     position: sticky;
     top: 0px;
     z-index: 100;
+    background-color: white;
+    transform: scale(1.01);
  
 }
 
@@ -36,7 +41,7 @@ body {
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: white;
+    
     position: relative;
     z-index: 9999;
     border-bottom: 1px solid rgba(128, 128, 128, 0.07);
@@ -57,6 +62,7 @@ body {
     width: 20px;  
     height: auto; 
 }
+
 
 
 .homeButton{
@@ -88,13 +94,18 @@ button:hover {
 /*   FOOTER   */
 
 .footer_box{
+    max-width: 1000px;
     font-family: bitter;
     text-align: center;
     justify-content: center;
     border-radius: 10px;
-    
+    border-top: 1px solid rgba(128, 128, 128, 0.07);
+    margin-left: auto;
+    margin-right: auto;
 }
-
+.social_network_hyperlink:link{
+    text-decoration: none;
+}
 
 .social_network{
     font-family: Arial, Helvetica, sans-serif;
@@ -102,6 +113,12 @@ button:hover {
     gap: 10px;
     text-align: center;
     justify-content: center;
+    color: black;
+}
+
+.social_network:hover{
+    transform: scale(1.1);
+    transition: 0.7s ;
 }
 
 .copyright{

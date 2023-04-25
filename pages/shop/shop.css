@@ -1,3 +1,18 @@
+@keyframes shake {
+    10% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    30% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+
 .shop_body{
     display: flex;
     flex-wrap: wrap;
@@ -54,6 +69,7 @@
 .add_cart_icon:hover{
     transform: scale(1.10);
     color: #413543;
+    
 }
 
 .cart_box{
@@ -72,7 +88,9 @@
 
 .cart_box:hover{
     background-color: rgb(64, 64, 64);
-    transform: scale(1.05); 
+    transform: scale(1.05);
+    animation: shake 0.25s;
+    animation-duration: 0.25s; 
 }
 
 
