@@ -1,9 +1,10 @@
 body {
     font-family: Arial Helvetica, sans-serif;
-    
-    
 }
 
+a{
+    text-decoration:none;
+}
 
 /*  FONT    */
 
@@ -22,73 +23,98 @@ body {
 
 
 /*   HEAD   */
-.top_stick{
-    position: sticky;
-    top: 0px;
-    z-index: 100;
-    background-color: white;
-    transform: scale(1.01);
- 
-}
-
-#head{
-    margin: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+@media only screen and (min-width: 1px) {
+    .top_stick{
+        position: sticky;
+        top: 0px;
+        z-index: 100;
+        background-color: white;
+        transform: scale(1.01);
+     
+    }
     
-    position: relative;
-    z-index: 9999;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.07);
-}
+    #head{
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        position: relative;
+        z-index: 9999;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.07);
+    }
+    
+    .headSelector {
+        display: flex;
+        text-align: center;
+        gap: 1.5vw;
+        
+    }
+    
+    .bolded{
+        font: bold;
+    }
+    
+    .icons{
+        width: 20px;  
+        height: auto; 
+    }
+    
+    .homeButton{
+        font-weight: bold;
+        text-decoration: none ;
+        cursor: pointer;
+        color: black;
+        font-family: bitter;
+        font: bold;
+        font-size: large;
+    }
+    
+    button {
+        border: none;
+        cursor: pointer;
+        
+        background-color: transparent;
+        font-size: medium;
+        color: black;
+        display: none;
+    }
+    
+    button:hover {
+        transform: scale(1.05);
+        color: #413543;
+        transition: .2s ;
+    }
 
-.headSelector {
-    display: flex;
-    text-align: center;
-    gap: 20px;
+    .header_icons {
+        visibility: visible;
+    }
+    
     
 }
 
-.bolded{
-    font: bold
-}
+@media only screen and (min-width: 1000px) {
+    button {
+        border: none;
+        cursor: pointer;
+        outline: none;
+        background-color: transparent;
+        font-size: medium;
+        color: black;
+        display: inline;
+    }
 
-.icons{
-    width: 20px;  
-    height: auto; 
-}
-
-
-
-.homeButton{
-    font-weight: bold;
-    text-decoration: none ;
-    cursor: pointer;
-    color: black;
-    font-family: bitter;
-    font: bold;
-    font-size: large;
+    .header_icons {
+        display: none;
+        
+    }
     
-}
-
-button {
-    border: none;
-    cursor: pointer;
-    outline: none;
-    background-color: transparent;
-    font-size: medium;
-    color: black;
-}
-
-button:hover {
-    transform: scale(1.05);
-    color: #413543;
-    transition: .2s ;
+   
 }
 
 /*   FOOTER   */
@@ -110,7 +136,7 @@ button:hover {
 .social_network{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    gap: 10px;
+    gap: 1vw;
     text-align: center;
     justify-content: center;
     color: black;

@@ -1,10 +1,11 @@
+@media only screen and (min-width: 1px){
 body {
     font-family: Arial Helvetica, sans-serif;
 }
 
 .box_shadow{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin: 20px;
+    margin-top: 2vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,8 +24,8 @@ body {
 }
 
 .galery_image{
-    height: 200px;
-    width: 200px;
+    height: 25vw;
+    width: 25vw;
     border-radius: 10px;  
     overflow: hidden; 
 }
@@ -63,7 +64,19 @@ body {
 }
 
 .page_selector{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+}
+
+@media only screen and (min-width: 1000px){
+    .galery_image{
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;  
+        overflow: hidden; 
+    }
 }
