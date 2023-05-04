@@ -1,5 +1,6 @@
 body {
     font-family: Arial Helvetica, sans-serif;
+    
 }
 
 a{
@@ -18,12 +19,27 @@ a{
     src: url(/fonts/Bitter.ttf);
 }
 
+@font-face {
+    font-family: inter;
+    src: url(/assets/fonts/Inter-ExtraBold.ttf);
+}
 
 
 
 
 /*   HEAD   */
 @media only screen and (min-width: 1px) {
+    .logo_IA {
+        width: 10vw;
+        height: 10vw;
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .logo_text{
+        display: none;
+    }
+
     .top_stick{
         position: sticky;
         top: 0px;
@@ -34,7 +50,8 @@ a{
     }
     
     #head{
-        margin: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -43,7 +60,6 @@ a{
         margin-right: auto;
         padding-left: 20px;
         padding-right: 20px;
-        
         position: relative;
         z-index: 9999;
         border-bottom: 1px solid rgba(128, 128, 128, 0.07);
@@ -61,7 +77,7 @@ a{
     }
     
     .icons{
-        width: 20px;  
+        width: 30px;  
         height: auto; 
     }
     
@@ -70,15 +86,17 @@ a{
         text-decoration: none ;
         cursor: pointer;
         color: black;
-        font-family: bitter;
+        font-family: inter;
         font: bold;
         font-size: large;
+        display: flex;
+        align-items: center;
+        gap: 30px;
     }
     
     button {
         border: none;
         cursor: pointer;
-        
         background-color: transparent;
         font-size: medium;
         color: black;
@@ -89,16 +107,88 @@ a{
         transform: scale(1.05);
         color: #413543;
         transition: .2s ;
+        
     }
 
     .header_icons {
         visibility: visible;
     }
+
+    .header_icons:hover {
+        
+        transform: scale(1.05);
+        color: #413543;
+        transition: .2s ;       
+        
+    }
     
+    .social_network_name{
+        display: none;
+    }
+
+    .social_networks{
+        display: flex;
+        gap: 5vw;
+        justify-content: center;
+        
+    }
+
+    .social_network_logo{
+        width: 4vw;
+        min-width: 10px;
+        min-height: 10px;
+    }
     
+    /*   FOOTER   */
+
+    .copyright{
+        color: gray;
+        font: xx-small;
+    }
+
+    .footer_box{
+        max-width: 1000px;
+        font-family: bitter;
+        text-align: center;
+        justify-content: center;
+        border-radius: 10px;
+        border-top: 1px solid rgba(128, 128, 128, 0.07);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .social_network_hyperlink:link{
+        text-decoration: none;
+    }
+
+    .social_network{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        gap: 1vw;
+        text-align: center;
+        justify-content: center;
+        color: black;
+    }
+
+    .social_network:hover{
+        transform: scale(1.1);
+        transition: 0.7s ;
+    }
+
+
+    .moon:hover{
+        transform: scale(1.1);
+        transition: .2s ;
+        cursor: pointer;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
+    .logo_IA {
+        width: 50px;
+        height: 50px;
+
+    }
+    
     button {
         border: none;
         cursor: pointer;
@@ -114,46 +204,33 @@ a{
         
     }
     
+    .icons{
+        width: 20px;  
+        height: auto; 
+    }
+
+    .logo_text{
+        display: inline;
+    }
+    
+
+    .social_network_name{
+        display: inline;
+        align-items: center;
+        color: black;
+    }
+
+    .social_networks{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        
+    }
+
+    .social_network_logo{
+        width: 20px;
+    }
+    
    
 }
 
-/*   FOOTER   */
-
-.footer_box{
-    max-width: 1000px;
-    font-family: bitter;
-    text-align: center;
-    justify-content: center;
-    border-radius: 10px;
-    border-top: 1px solid rgba(128, 128, 128, 0.07);
-    margin-left: auto;
-    margin-right: auto;
-}
-.social_network_hyperlink:link{
-    text-decoration: none;
-}
-
-.social_network{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    gap: 1vw;
-    text-align: center;
-    justify-content: center;
-    color: black;
-}
-
-.social_network:hover{
-    transform: scale(1.1);
-    transition: 0.7s ;
-}
-
-.copyright{
-    color: gray;
-    font: xx-small;
-}
-
-.moon:hover{
-    transform: scale(1.1);
-    transition: .2s ;
-    cursor: pointer;
-}

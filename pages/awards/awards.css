@@ -1,0 +1,76 @@
+.awards{
+    text-align: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.awards_title{
+    font-size: xx-large;
+    text-decoration: underline;
+    
+}
+
+.awards_p{
+    
+}
+
+.awards_about_title{
+    font-size: x-large;
+}
+
+.awards_about_p{
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+.upload_box{
+    
+}
+
+.upload_box_text{
+
+}
+
+.upload_box_form{
+
+}
+
+.upload_box_selector{
+
+}
+
+.upload_box_submit{
+
+}
+.winners{
+   
+    max-width: 1000px;
+    margin-bottom: 2vw;
+    
+}
+.winners_box{
+    
+    display: inline-block;
+}
+.image{
+   width: 20vw;
+
+}
+
+.image_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 5px;
+    margin-top: -14px;
+    margin-left: -50px;
+    width: 100px;
+    background-color: white;
+    text-align: center;
+}
