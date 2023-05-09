@@ -16,10 +16,6 @@
     
 }
 
-.awards_p{
-    
-}
-
 .awards_about_title{
     font-size: x-large;
 }
@@ -29,25 +25,29 @@
     margin-left: 10vw;
 }
 
-.upload_box{
-    
-}
-
-.upload_box_text{
+.upload_box_button{
+    border: none;
+    color: blue;
 
 }
-
-.upload_box_form{
-
+.upload_box_submit{
+    color:red;
 }
 
 .upload_box_selector{
+    color:green;
+}
+
+input{
+    background: transparent;
+}
+
+
+.upload_box_selector {
 
 }
 
-.upload_box_submit{
 
-}
 .winners{
    
     max-width: 1000px;
