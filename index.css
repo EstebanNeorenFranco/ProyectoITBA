@@ -14,10 +14,7 @@ a{
     src: url(/fonts/DeliciousHandrawn.ttf);
   }
 
-@font-face {
-    font-family: bitter;
-    src: url(/fonts/Bitter.ttf);
-}
+
 
 @font-face {
     font-family: inter;
@@ -70,19 +67,34 @@ a{
         text-align: center;
         gap: 1.5vw;
         
+        
     }
 
-    .sidebar{
+    #sidebar{
         position: fixed;
         background-color: rgb(250, 250, 250);
-        right: 0;
+        right: -100%;
         top: 0;
         width: 50vw;
         height: 100%;
         z-index: 1000;
         box-shadow: -10px 0px 10px 1px #919191;
+       
     }
 
+    #sidebar.active{
+        
+        right: 0;
+        transition: 0.2s;
+        
+    }
+
+    #sidebar.close{
+        
+        right: -100%;
+        transition: 0.2s;
+        display: none;
+    }
     .sidebar_text{
         color: black;
         gap: 5vw;
@@ -104,10 +116,7 @@ a{
         flex-direction: column;
         gap: 5vw;
     }
-    .sidebar_box{
-
-    }
-
+  
     .close_menu{
         position: absolute;
         margin: 4vw;
@@ -118,6 +127,7 @@ a{
         color: #413543;
         transition: .2s ;
     }
+
     
     .headSelector_text {
         background-color: transparent;
@@ -155,6 +165,14 @@ a{
     
     .header_icons {
         display: inline;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    .header_icons:active {
+        display: inline;
     }
 
     .header_icons:hover {
@@ -162,7 +180,7 @@ a{
         transform: scale(1.05);
         color: #413543;
         transition: .2s ; 
-             
+        
         
     }
     
