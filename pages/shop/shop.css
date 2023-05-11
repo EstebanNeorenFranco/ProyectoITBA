@@ -13,22 +13,35 @@
     }
 }
 
+
 .shop_body{
+    
+    flex-wrap: wrap; 
+
+}
+
+.shop_items{
     display: flex;
+    max-width: 800px;
     flex-wrap: wrap;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
     justify-content: center;
-  align-items: center;
+
 }
 
 
+
 .shop_box{
-    width: 230px;
+    width: 240px;
     height: auto;
     font: bold;
     border-radius: 5px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(90, 91, 92, 0.2) 0px 8px 24px;
     margin: 10px;
-
+    
 }
 
 .shop_box:hover{
@@ -54,6 +67,12 @@
     margin:auto;
     display:block;
     padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.shop_image:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 
