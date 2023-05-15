@@ -42,35 +42,51 @@ input{
     background: transparent;
 }
 
-
-.upload_box_selector {
-
-}
-
-
-.winners{
-   
-    max-width: 1000px;
-    margin-bottom: 2vw;
-    
-}
-.winners_box{
-    
-    display: inline-block;
-}
-.image{
-   width: 20vw;
-
-}
-
-.image_text{
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #e2b032;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 5px;
-    margin-top: -14px;
-    margin-left: -50px;
-    width: 100px;
-    background-color: white;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
+    font: bold;
+    font-size: xx-large
+  }
+
+.images_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
 }
