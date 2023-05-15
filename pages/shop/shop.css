@@ -85,6 +85,12 @@
     cursor: pointer;
 }
 
+.darkmode .add_cart_icon{
+    filter: invert(100%);
+}
+
+
+
 .add_cart_icon:hover{
     transform: scale(1.10);
     color: #413543;
@@ -105,6 +111,11 @@
     right:5%;
 }
 
+.darkmode .cart_box{
+    background-color: white;
+    
+}
+
 .cart_box:hover{
     background-color: rgb(64, 64, 64);
     transform: scale(1.05);
@@ -119,5 +130,9 @@
     height: 30px;
     filter: invert(100%);    
     
+}
+
+.darkmode .cart {
+    filter: invert(100%);
 }
 
