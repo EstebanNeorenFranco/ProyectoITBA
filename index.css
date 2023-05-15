@@ -135,6 +135,17 @@ a{
         font-size: large;
 
     }
+
+    .dark-mode .sidebar_text{
+        color: white;
+        gap: 5vw;
+        border-bottom: 1px solid rgba(53, 53, 53, 0.07);
+        padding-left: 5vw;
+        cursor: pointer;
+        font-size: large;
+
+    }
+
     .sidebar_text:hover{
         transform: scale(1.05);
         transition: .5s ;
