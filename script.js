@@ -22,12 +22,15 @@ if (closeBtn) {
 }
 
 if (darkBtn) {
-  if (darkMode === true) {
-    darkBtn.addEventListener('click', function() {
-      document.getElementById('body').classList.remove('active');
-      document.getElementById('body').classList.add('closed');
-    });
-  }
+  darkBtn.addEventListener('click', function() {
+    darkMode = !darkMode;
+
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  });
 } else {
-  console.error("No se pudo activar el modo oscuro");
+  console.error("No se encontró el botón de modo oscuro");
 }
