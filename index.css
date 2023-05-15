@@ -2,13 +2,12 @@ body {
     font-family: Arial Helvetica, sans-serif;
     font-family: Arial Helvetica, sans-serif;
     background-color: white;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 .dark-mode {
-    background-color: #3c3c3c; /* Cambia el color de fondo a tu preferencia */
-    color: #fff; /* Cambia el color del texto a tu preferencia */
-    /* Agrega otros estilos para el modo oscuro si es necesario */
+    background-color: #252525;
+    color: white; 
   }
 
 
@@ -46,6 +45,8 @@ a{
         display: none;
     }
 
+
+
     .top_stick{
         position: sticky;
         top: 0px;
@@ -56,7 +57,7 @@ a{
     }
     
     .dark-mode .top_stick {
-        background-color: rgb(60, 60, 60); 
+        background-color: #252525; 
         color: white; 
       }
 
@@ -136,7 +137,6 @@ a{
     }
     .sidebar_text:hover{
         transform: scale(1.05);
-        color: #413543;
         transition: .5s ;
     }
 
@@ -154,7 +154,7 @@ a{
     }
     .close_menu:hover{
         transform: scale(1.05);
-        color: #413543;
+        color: #FAFAFA;
         transition: .2s ;
     }
 
@@ -164,20 +164,29 @@ a{
         border: none;
         display: none;
     }
+
+    .dark-mode .headSelector_text {
+        color: white;
+    }
     
     .headSelector_text:hover {
         transform: scale(1.05);
-        color: #413543;
         transition: .2s ;
     }
 
     .bolded{
         font: bold;
+        
     }
     
     .icons{
         width: 30px;  
         height: auto; 
+        
+    }
+
+    .dark-mode .icons { 
+        filter: invert(100%);
     }
     
     .homeButton{
@@ -216,6 +225,13 @@ a{
     
     .social_network_name{
         display: none;
+        
+    }
+    
+
+
+    .social_network{
+        align-items: center;
     }
 
     .social_networks{
@@ -231,6 +247,14 @@ a{
         min-height: 10px;
     }
     
+    .dark-mode .social_network_logo{
+        width: 4vw;
+        max-width: 30px;
+        max-height: 30px;
+        filter: invert(100%);
+    }
+
+
     /*   FOOTER   */
 
     .copyright{
@@ -313,6 +337,10 @@ a{
     .logo_text{
         display: inline;
     }
+
+    .dark-mode .logo_text{
+        color: white;
+    }
     
     .header_icons {
         
@@ -325,6 +353,13 @@ a{
         color: black;
     }
 
+    .dark-mode .social_network_name{
+        display: inline;
+        align-items: center;
+        color: white;
+        
+    }
+
     .social_networks{
         display: flex;
         gap: 10px;
@@ -333,7 +368,7 @@ a{
     }
 
     .social_network_logo{
-        width: 20px;
+        width: 5px;
     }
     
     .sidebar{
