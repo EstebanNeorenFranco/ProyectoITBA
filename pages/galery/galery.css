@@ -19,9 +19,11 @@ body {
 }
 
 .box_shadow:hover{
-    background-color: rgb(250, 250, 250);
+    box-shadow: 1px 1px 5px grey;
     
 }
+
+
 
 .galery_image{
     height: 25vw;
