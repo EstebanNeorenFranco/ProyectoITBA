@@ -78,11 +78,14 @@
 
 
 .add_cart_icon{
-    width: 30px;
+    width: 40px;
     margin: auto;
     display:block;
     padding-bottom: 10px;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+    
 }
 
 .darkmode .add_cart_icon{
@@ -136,3 +139,44 @@
     filter: invert(100%);
 }
 
+#carrito{
+    position: fixed;
+    top: 14vw;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    background-color: rgb(168, 168, 168);
+    box-shadow: rgba(90, 91, 92, 0.2) 0px 8px 24px;
+    margin: 0 auto;
+    text-align: center;
+    width: 80vw;
+    max-width: 600px;
+    height: 80vw;
+    max-height: 500px;
+    display: none;
+}
+
+#carrito.active{
+    display: inline;
+}
+
+#carrito.close{
+    display: none;
+}
+
+
+
+.compra_btn{
+    background-color: transparent;
+    cursor: pointer;
+    border: 0px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.cart_box_btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

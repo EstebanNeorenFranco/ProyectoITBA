@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario Tarjeta de Crédito</title>
+  <link rel="stylesheet" href="/compra.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Formulario de Tarjeta de Crédito</h2>
+    <form>
+      <div class="form-group">
+        <label>Número de Tarjeta:</label>
+        <input type="text" class="textInput" required>
+      </div>
+      <div class="form-group">
+        <label>Titular de la Tarjeta:</label>
+        <input type="text" class="textInput" required>
+      </div>
+      <div class="form-group">
+        <label>Fecha de Vencimiento:</label>
+        <input type="text" class="textInput" required>
+      </div>
+      <div class="form-group">
+        <label>CVV:</label>
+        <input type="text" class="textInput" required>
+      </div>
+      <div class="form-group">
+        <label>Tipo de Tarjeta:</label>
+        <select class="textInput" name="cardType" required>
+          <option class="textOpt">Seleccione...</option>
+          <option class="textOpt">Visa</option>
+          <option class="textOpt">Mastercard</option>
+          <option class="textOpt">Mercado Pago</option>
+          <option class="textOpt">Cuenta DNI</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
