@@ -70,6 +70,37 @@
     cursor: pointer;
 }
 
+#cart_box_num{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom:4%;
+    right:5%;
+    z-index: 100;
+}
+
+#cart_box_num .invisible{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom:4%;
+    right:5%;
+    z-index: 1000;
+    display: none;
+}
+
 .shop_image:hover{
     transform: scale(1.05);
     transition: 0.3s;
