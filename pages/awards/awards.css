@@ -27,19 +27,26 @@
 
 .upload_box_button{
     border: none;
-    color: blue;
+    cursor: pointer;
 
 }
 .upload_box_submit{
-    color:red;
+  font: bolder;
+  border-radius: 15%;
+  cursor: pointer;
+  
 }
 
 .upload_box_selector{
-    color:green;
+  font: bolder;
+  cursor: pointer;
+  
 }
 
 input{
     background: transparent;
+    cursor: pointer;
+    font: bolder;
 }
 
 .container {

@@ -45,7 +45,7 @@
 }
 
 .shop_box:hover{
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(210, 210, 210);
     transition: 0.3s;
 
 }
@@ -54,6 +54,8 @@
     padding-top: 15px;
     text-align: center;
 }
+
+
 
 .shop_price{
     padding-top: 5px;
@@ -119,9 +121,6 @@
     
 }
 
-.darkmode .add_cart_icon{
-    filter: invert(100%);
-}
 
 
 
@@ -130,6 +129,8 @@
     color: #413543;
     
 }
+
+
 
 .cart_box{
     width: 50px;
@@ -146,7 +147,7 @@
 }
 
 .darkmode .cart_box{
-    background-color: white;
+    background-color: rgb(67, 67, 67);
     
 }
 
@@ -176,7 +177,7 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
-    background-color: rgb(168, 168, 168);
+    background-color: rgb(236, 236, 236);
     box-shadow: rgba(90, 91, 92, 0.2) 0px 8px 24px;
     margin: 0 auto;
     text-align: center;
@@ -185,6 +186,7 @@
     height: 80vw;
     max-height: 500px;
     display: none;
+    border: solid;
 }
 
 #carrito.active{
@@ -198,7 +200,6 @@
 
 
 .compra_btn{
-    background-color: transparent;
     cursor: pointer;
     border: 0px;
     color: white;
@@ -210,4 +211,9 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+.totalCart{
+    display: flex;
+    justify-content: center;
 }

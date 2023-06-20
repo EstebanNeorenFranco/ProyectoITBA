@@ -75,8 +75,8 @@
                 <div class="shop_box">
                     <h3 class="shop_title">T-shirt</h3>
                     <img class="shop_image" loading="lazy" src="/assets/merch/tshirt-bg.png" alt="">
-                    <p class="shop_price"><b>$30</b></p>
-                    <button class="add_cart_icon" onclick="addToCart('T-shirt')"><img class="add_cart_icon" src="/assets/icons/cart_add.png"></button>
+                    <p class="shop_price"><b>$70</b></p>
+                    <button class="add_cart_icon" onclick="addToCart('T-shirt', 60)"; addCartTotal(70)"><img class="add_cart_icon" src="/assets/icons/cart_add.png"></button>
                 </div>
         </div>
         <div class="cart_box">
@@ -88,8 +88,8 @@
             <div class="shop_box">
                 <h3 class="shop_title">Small t-shirt</h3>
                 <img class="shop_image" loading="lazy" src="/assets/merch/tshirt-child-bg.png" alt="">
-                <p class="shop_price"><b>$30</b></p>
-                <button class="add_cart_icon" onclick="addToCart('Small t-shirt')"><img class="add_cart_icon" src="/assets/icons/cart_add.png"></button>
+                <p class="shop_price"><b>$50</b></p>
+                <button class="add_cart_icon" onclick="addToCart('Small t-shirt', 45)"; addCartTotal(50)"><img class="add_cart_icon" src="/assets/icons/cart_add.png"></button>
             </div>
         </div>
         <div class="cart_box">
@@ -101,8 +101,8 @@
             <div class="shop_box">
                 <h3 class="shop_title">Cap</h3>
                 <img class="shop_image" loading="lazy" src="/assets/merch/cap-bg.png" alt="">
-                <p class="shop_price"><b>$30</b></p>
-                <button class="add_cart_icon" onclick="addToCart('Cap')"><img class="add_cart_icon" src="/assets/icons/cart_add.png"></button>
+                <p class="shop_price"><b>$20</b></p>
+                <button class="add_cart_icon" onclick="addToCart('Cap', 33)"; addCartTotal(20)"><img class="add_cart_icon" src="/assets/icons/cart_add.png"></button>
             </div>
         </div>
         <div class="cart_box">
@@ -114,8 +114,8 @@
             <div class="shop_box">
                 <h3 class="shop_title">Wool hat</h3>
                 <img class="shop_image" loading="lazy" src="/assets/merch/hat-bg.png" alt="">
-                <p class="shop_price"><b>$30</b></p>
-                <button class="add_cart_icon" onclick="addToCart('Wool hat')"><img class="add_cart_icon" src="/assets/icons/cart_add.png"></button>
+                <p class="shop_price"><b>$10</b></p>
+                <button class="add_cart_icon" onclick="addToCart('Wool hat', 20)"; addCartTotal(10)"><img class="add_cart_icon" src="/assets/icons/cart_add.png"></button>
             </div>
         </div>
         <div class="cart_box">
@@ -128,7 +128,7 @@
                 <h3 class="shop_title">Bag</h3>
                 <img class="shop_image" loading="lazy" src="/assets/merch/totebag-bg.png" alt="">
                 <p class="shop_price"><b>$30</b></p>
-                <button class="add_cart_icon" onclick="addToCart('Bag')"><img class="add_cart_icon" src="/assets/icons/cart_add.png"></button>
+                <button class="add_cart_icon" onclick="addToCart('Bag', 30)"><img class="add_cart_icon" src="/assets/icons/cart_add.png"></button>
             </div>
         </div>
         <div id="cart_box_num" ></div>
@@ -183,19 +183,23 @@
     </footer>
     
 
- <div id="carrito">
-    <h2 class="cart_title">Productos agregados al carrito:</h2>
-    <p id="cart">
-    </p>
-    <button class="compra_btn">
-        <a href="/compra.html" class="compra_btn">
-            <p>Comprar</p>
-        </a>
-    </button>
- </div>
+    <div id="carrito">
+        <h2 class="cart_title">Productos agregados al carrito:</h2>
+        <p id="cart"></p>
+        <p><b>Total a pagar:</b></p>
+        <div class="totalCart">
+            <p>$</p>
+            <p id="cart_total"></p>
+        </div>
+        <button class="compra_btn">
+            <a href="/compra.html" class="compra_btn">
+                <p>Comprar</p>
+            </a>
+        </button>
+    </div>
 
 
-  <script src="chart.js"></script>
+  <script src="cart.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
